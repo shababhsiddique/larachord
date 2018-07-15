@@ -38,6 +38,7 @@
 
         <!-- Navbar -->
         @include('site.common.menu')
+        
 
 
         <!-- Header -->
