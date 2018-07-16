@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Middleware\CheckAdmin;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +18,23 @@ Route::get('/','SiteController@index');
 //Route::get('/', function () {
 //    return view('welcome');
 //});
+
+
+
+/**
+ * Admin Panel Routes
+ */
+Route::get('/administrator', 'AdminLoginController@index');
+Route::post('/admin/authenticate', 'AdminLoginController@verifyUser');
+
+Route::group(['prefix' => 'admin', 'middleware' => [CheckAdmin::class]], function() {
+
+    Route::get('/logout', 'AdminController@logout');
+    Route::get('/', 'AdminController@index');
+
+});
+
+/**
+ * Admin Panel Routes
+ */
+

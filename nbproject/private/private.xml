@@ -5,6 +5,10 @@
         <group>
             <file>file:/D:/xampp/htdocs/larachord/app/Http/Controllers/SiteController.php</file>
             <file>file:/D:/xampp/htdocs/larachord/resources/views/site/common/menu.blade.php</file>
+            <file>file:/D:/xampp/htdocs/larachord/config/app.php</file>
+            <file>file:/D:/xampp/htdocs/larachord/app/Providers/AppServiceProvider.php</file>
+            <file>file:/D:/xampp/htdocs/larachord/app/Http/Kernel.php</file>
+            <file>file:/D:/xampp/htdocs/larachord/.env</file>
             <file>file:/D:/xampp/htdocs/larachord/resources/views/site/master.blade.php</file>
         </group>
     </open-files>
