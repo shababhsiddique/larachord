@@ -23,6 +23,12 @@
         <link rel="apple-touch-icon" href="{{asset('assets/img/apple-touch-icon.png')}}">
         <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}">
 
+        
+        <!--content tools-->
+        <link rel="stylesheet" type="text/css" href="{{asset('adminassets/contenttool/content-tools.min.css')}}"/>
+        <!--content tools-->
+        
+        
         <script src="{{asset('assets/js/vendor/modernizr.js')}}"></script>
 
     </head>
@@ -98,7 +104,7 @@
             <!-- Features -->
             <section class="section text-center">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" >
                         <div class="col-md-12">
                             <hgroup class="title-group">
                                 <h3 class="section-title">Main Features</h3>
@@ -689,7 +695,14 @@
         <!-- Background video -->
         <script src="{{asset('assets/js/vendor/jquery.mb.YTPlayer.min.js')}}"></script>
 
+        
         <script src="{{asset('assets/js/main.js')}}"></script>
+        
+        
+        <!--content tools-->
+        <script src="{{asset('adminassets/contenttool/content-tools.min.js')}}"></script>
+        <script src="{{asset('adminassets/contenttool/editor.js')}}"></script>
+        <!--content tools-->
 
     </body>
 </html>
