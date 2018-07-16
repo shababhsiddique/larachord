@@ -41,19 +41,18 @@
             </div>
         </nav>
 
-        <main role="main" class="container">
-            <div class="jumbotron">
-                <h1>Navbar example</h1>
-                <p class="lead">This example is a quick exercise to illustrate how fixed to top navbar works. As you scroll, it will remain fixed to the top of your browser's viewport.</p>
-                <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
-            </div>
-        </main>
+<!--        <main role="main" class="container-fluid">                        
+        </main>-->
+        @yield('adminContent')            
+
+
+
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="<?php echo asset('adminassets/js/vendor/jquery.slim.min.js')?>"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="<?php echo asset('adminassets/js/vendor/jquery.slim.min.js') ?>"><\/script>')</script>
         <script src="{{asset('adminassets/js/vendor/popper.min.js')}}"></script>
         <script src="{{asset('adminassets/js/bootstrap.min.js')}}"></script>
     </body>

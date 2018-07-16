@@ -18,7 +18,7 @@ class AdminController extends Controller
 
         Cache::flush();
 
-        $this->layout['adminNotification'] = view('admin.common.notification');
+        $this->layout['adminNotification'] = view('admin.partials.notification');
     }
 
     /**
@@ -28,7 +28,7 @@ class AdminController extends Controller
     public function index() {
 
         //Load Component
-        //$this->layout['adminContent'] = view('admin.partials.dashboard');
+        $this->layout['adminContent'] = view('admin.partials.liveframe');
 
         //return view
         return view('admin.master', $this->layout);

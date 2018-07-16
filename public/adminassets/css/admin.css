@@ -1,5 +1,9 @@
 /* Show it is fixed to the top */
 body {
-  min-height: 75rem;
-  padding-top: 4.5rem;
+  /*min-height: 75rem;*/
+  padding-top: 3.5rem;
+}
+
+.embed-responsive-custom{
+   height: 90vh;
 }
