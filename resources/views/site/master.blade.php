@@ -23,16 +23,40 @@
         <link rel="apple-touch-icon" href="{{asset('assets/img/apple-touch-icon.png')}}">
         <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}">
 
-        
+
         <!--content tools-->
-        <link rel="stylesheet" type="text/css" href="{{asset('adminassets/contenttool/content-tools.min.css')}}"/>
+        <!--<link rel="stylesheet" type="text/css" href="{{asset('adminassets/contenttool/content-tools.min.css')}}"/>-->
         <!--content tools-->
-        
-        
+
+
+        <!--nicedit-->
+<!--        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="{{asset('adminassets/nicedit/panel.css')}}"/>
+        <script src="{{asset('adminassets/nicedit/nicEdit.js')}}"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            bkLib.onDomLoaded(function() {
+            var myNicEditor = new nicEditor();
+            myNicEditor.setPanel('myNicPanel');
+            myNicEditor.addInstance('myInstance1');
+            myNicEditor.addInstance('myInstance2');
+            myNicEditor.addInstance('myInstance3');
+            });
+            //]]>
+        </script>        
+        <!--nicedit-->
+
+
         <script src="{{asset('assets/js/vendor/modernizr.js')}}"></script>
 
+        
+        
     </head>
     <body class="video-bg">
+
+
+        <div id="myNicPanel"></div>
+        
 
         <!-- Preloader -->
         <div class="preloader flex flex-middle flex-center">
@@ -44,7 +68,7 @@
 
         <!-- Navbar -->
         @include('site.common.menu')
-        
+
 
 
         <!-- Header -->
@@ -61,7 +85,7 @@
                opacity:1,
                quality: 'highres'}">
             </a><!-- Video / See Documentation -->
-            <div class="container">
+            <div class="container" id="myInstance1">
                 <div class="row">
                     <div class="col-xs-12">
                         <hgroup class="title-group">
@@ -105,7 +129,7 @@
             <section class="section text-center">
                 <div class="container">
                     <div class="row" >
-                        <div class="col-md-12">
+                        <div class="col-md-12" >
                             <hgroup class="title-group">
                                 <h3 class="section-title">Main Features</h3>
                                 <h5 class="subtitle">Seamlessly reconceptualize fully tested outsourcing</h5>
@@ -684,7 +708,7 @@
         <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="<?php echo asset('assets/js/vendor/jquery-1.11.3.min.js')?>"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="<?php echo asset('assets/js/vendor/jquery-1.11.3.min.js') ?>"><\/script>')</script>
         <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
         <script src="{{asset('assets/js/vendor/jquery.appear.js')}}"></script>
@@ -695,13 +719,13 @@
         <!-- Background video -->
         <script src="{{asset('assets/js/vendor/jquery.mb.YTPlayer.min.js')}}"></script>
 
-        
+
         <script src="{{asset('assets/js/main.js')}}"></script>
-        
-        
+
+
         <!--content tools-->
-        <script src="{{asset('adminassets/contenttool/content-tools.min.js')}}"></script>
-        <script src="{{asset('adminassets/contenttool/editor.js')}}"></script>
+        <!--<script src="{{asset('adminassets/contenttool/content-tools.min.js')}}"></script>-->
+        <!--<script src="{{asset('adminassets/contenttool/editor.js')}}"></script>-->
         <!--content tools-->
 
     </body>
