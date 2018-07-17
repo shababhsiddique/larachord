@@ -382,7 +382,8 @@ var nicEditorConfig = bkClass.extend({
       noActive: true
     }
   },
-  iconsPath: 'adminassets/nicedit/nicEditorIcons.gif',
+  //iconsPath: 'adminassets/nicedit/nicEditorIcons.gif',
+  iconsPath: 'adminassets/nicedit/iconset22px.png',
   buttonList: ['save', 'bold', 'italic', 'underline', 'left', 'center', 'right', 'justify', 'ol', 'ul', 'fontSize', 'fontFamily', 'fontFormat', 'indent', 'outdent', 'image', 'upload', 'link', 'unlink', 'forecolor', 'bgcolor'],
   iconList: {
     "xhtml": 1,
@@ -537,7 +538,7 @@ var nicEditor = bkClass.extend({
     var file = (options.iconFiles) ? options.iconFiles[iconName] : '';
     return {
       backgroundImage: "url('" + ((icon) ? this.options.iconsPath : file) + "')",
-      backgroundPosition: ((icon) ? ((icon - 1) * -18) : 0) + 'px 0px'
+      backgroundPosition: ((icon) ? ((icon - 1) * -22) : 0) + 'px 0px'
     };
   },
 
@@ -924,16 +925,16 @@ var nicEditorButton = bkClass.extend({
       marginTop: '2px'
     }).appendTo(e);
     this.contain = new bkElement('DIV').setStyle({
-      width: '20px',
-      height: '20px'
+      width: '30px',
+      height: '30px'
     }).addClass('buttonContain').appendTo(this.margin);
     this.border = new bkElement('DIV').setStyle({
       backgroundColor: '#efefef',
       border: '1px solid #efefef'
     }).appendTo(this.contain);
     this.button = new bkElement('DIV').setStyle({
-      width: '18px',
-      height: '18px',
+      width: '22px',
+      height: '22px',
       overflow: 'hidden',
       zoom: 1,
       cursor: 'pointer'

@@ -55,9 +55,7 @@
     <body class="video-bg">
 
 
-        <i class="fas fa-bold"></i>
-        <div id="myNicPanel">            
-        </div>
+        <div id="myNicPanel"></div>
         
 
         <!-- Preloader -->
