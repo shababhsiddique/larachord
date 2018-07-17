@@ -925,8 +925,8 @@ var nicEditorButton = bkClass.extend({
       marginTop: '2px'
     }).appendTo(e);
     this.contain = new bkElement('DIV').setStyle({
-      width: '30px',
-      height: '30px'
+      /*width: '28px',
+      height: '28px'*/
     }).addClass('buttonContain').appendTo(this.margin);
     this.border = new bkElement('DIV').setStyle({
       backgroundColor: '#efefef',
@@ -935,6 +935,7 @@ var nicEditorButton = bkClass.extend({
     this.button = new bkElement('DIV').setStyle({
       width: '22px',
       height: '22px',
+      margin: '5px',
       overflow: 'hidden',
       zoom: 1,
       cursor: 'pointer'
@@ -976,8 +977,9 @@ var nicEditorButton = bkClass.extend({
     switch (state) {
     case 'hover':
       stateStyle = {
-        border: '1px solid #666',
-        backgroundColor: '#ddd'
+//        boxShadow: 'inset 0 0 3px #000000',
+        border: '1px solid #C5CCD1',
+        backgroundColor: '#D5DCE1'
       };
       break;
     case 'active':
@@ -988,6 +990,7 @@ var nicEditorButton = bkClass.extend({
       break;
     default:
       stateStyle = {
+//        boxShadow: '0px',
         border: '1px solid #efefef',
         backgroundColor: '#efefef'
       };
