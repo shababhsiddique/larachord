@@ -55,7 +55,9 @@
     <body class="video-bg">
 
 
+        <!--nic panel floating buttons-->
         <div id="myNicPanel"></div>
+        <!--nic panel floating buttons-->
         
 
         <!-- Preloader -->
