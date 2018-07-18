@@ -383,7 +383,7 @@ var nicEditorConfig = bkClass.extend({
     }
   },
   //iconsPath: 'adminassets/nicedit/nicEditorIcons.gif',
-  iconsPath: 'adminassets/nicedit/iconset22px.png',
+  iconsPath: 'adminassets/nicedit/iconset22pxgrb.png',
   buttonList: ['save', 'bold', 'italic', 'underline', 'left', 'center', 'right', 'justify', 'ol', 'ul', 'fontSize', 'fontFamily', 'fontFormat', 'indent', 'outdent', 'image', 'upload', 'link', 'unlink', 'forecolor', 'bgcolor'],
   iconList: {
     "xhtml": 1,
@@ -853,7 +853,7 @@ var nicEditorPanel = bkClass.extend({
     this.panelContain = new bkElement('DIV').setStyle({
       overflow: 'hidden',
       width: '100%',
-      border: '1px solid #cccccc',
+      border: '0px solid #cccccc',
       backgroundColor: '#efefef'
     }).addClass('panelContain');
     this.panelElm = new bkElement('DIV').setStyle({
@@ -1136,7 +1136,7 @@ var nicEditorPane = bkClass.extend({
     this.contain = new bkElement('div').setStyle({
       zIndex: '99999',
       overflow: 'hidden',
-      position: 'absolute',
+      position: 'fixed',
       left: this.pos[0] + 'px',
       top: this.pos[1] + 'px'
     });
@@ -2341,3 +2341,6 @@ var nicCodeButton = nicEditorAdvancedButton.extend({
 });
 
 nicEditors.registerPlugin(nicPlugin, nicCodeOptions);
+
+
+
