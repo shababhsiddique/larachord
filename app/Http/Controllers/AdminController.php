@@ -34,6 +34,8 @@ class AdminController extends Controller
         return view('admin.master', $this->layout);
     }
     
+    
+    
      public function logout() {
 
 
