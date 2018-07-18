@@ -30,7 +30,7 @@
 
 
         <!--nicedit-->
-        @yield('adminBar')     
+        @yield('adminstack')     
         <!--nicedit-->
 
         <script src="{{asset('assets/js/vendor/modernizr.js')}}"></script>
@@ -42,9 +42,7 @@
 
 
         <!--nic panel floating buttons-->
-        <div id="myNicPanel">
-            <span class="grab"></span>
-        </div>
+        @yield('adminbar')        
         <!--nic panel floating buttons-->
 
 

@@ -17,7 +17,8 @@ class SiteController extends Controller
     public function index()
     {
           //Load Component
-        $this->layout['adminBar'] = view('admin.partials.editorbar');
+        $this->layout['adminstack'] = view('admin.partials.adminstack');
+        $this->layout['adminbar'] = view('admin.partials.adminbar');
 
         //return view
         return view('site.master', $this->layout);

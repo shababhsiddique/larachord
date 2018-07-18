@@ -2346,7 +2346,13 @@ var nicCodeButton = nicEditorAdvancedButton.extend({
 
 nicEditors.registerPlugin(nicPlugin, nicCodeOptions);
 
-
+function inIframe () {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
 
 $(document).ready(function () {
     /*Draggable*/
