@@ -24,28 +24,14 @@
         <link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}">
 
 
-        <!--content tools-->
-        <!--<link rel="stylesheet" type="text/css" href="{{asset('adminassets/contenttool/content-tools.min.css')}}"/>-->
-        <!--content tools-->
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="<?php echo asset('assets/js/vendor/jquery-1.11.3.min.js') ?>"><\/script>')</script>
 
 
         <!--nicedit-->
-        <!--        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
-        <link rel="stylesheet" href="{{asset('adminassets/nicedit/panel.css')}}"/>
-        <script src="{{asset('adminassets/nicedit/nicEdit.js')}}"></script>
-        <script type="text/javascript">
-            //<![CDATA[
-            bkLib.onDomLoaded(function() {
-            var myNicEditor = new nicEditor();
-            myNicEditor.setPanel('myNicPanel');
-            myNicEditor.addInstance('myInstance1');
-            myNicEditor.addInstance('myInstance2');
-            myNicEditor.addInstance('myInstance3');
-            });
-            //]]>
-        </script>        
+        @yield('adminBar')     
         <!--nicedit-->
-
 
         <script src="{{asset('assets/js/vendor/modernizr.js')}}"></script>
 
@@ -57,8 +43,7 @@
 
         <!--nic panel floating buttons-->
         <div id="myNicPanel">
-            <span class="grab">                
-            </span>
+            <span class="grab"></span>
         </div>
         <!--nic panel floating buttons-->
 
@@ -712,8 +697,7 @@
 
         <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="<?php echo asset('assets/js/vendor/jquery-1.11.3.min.js') ?>"><\/script>')</script>
+        
         <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 
         <script src="{{asset('assets/js/vendor/jquery.appear.js')}}"></script>
@@ -726,55 +710,7 @@
 
 
         <script src="{{asset('assets/js/main.js')}}"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-            /*Draggable*/
-            var object = document.getElementById('myNicPanel');
-            var initX, initY, firstX, firstY;
-            object.addEventListener('mousedown', function(e) {
-
-            e.preventDefault();
-            initX = this.offsetLeft;
-            initY = this.offsetTop;
-            firstX = e.pageX;
-            firstY = e.pageY;
-            this.addEventListener('mousemove', dragIt, false);
-            window.addEventListener('mouseup', function() {
-            object.removeEventListener('mousemove', dragIt, false);
-            }, false);
-            }, false);
-            object.addEventListener('touchstart', function(e) {
-
-            e.preventDefault();
-            initX = this.offsetLeft;
-            initY = this.offsetTop;
-            var touch = e.touches;
-            firstX = touch[0].pageX;
-            firstY = touch[0].pageY;
-            this.addEventListener('touchmove', swipeIt, false);
-            window.addEventListener('touchend', function(e) {
-            e.preventDefault();
-            object.removeEventListener('touchmove', swipeIt, false);
-            }, false);
-            }, false);
-            function dragIt(e) {
-            this.style.left = initX + e.pageX - firstX + 'px';
-            this.style.top = initY + e.pageY - firstY + 'px';
-            }
-
-            function swipeIt(e) {
-            var contact = e.touches;
-            this.style.left = initX + contact[0].pageX - firstX + 'px';
-            this.style.top = initY + contact[0].pageY - firstY + 'px';
-            }
-            });
-        </script>
-
-
-        <!--content tools-->
-        <!--<script src="{{asset('adminassets/contenttool/content-tools.min.js')}}"></script>-->
-        <!--<script src="{{asset('adminassets/contenttool/editor.js')}}"></script>-->
-        <!--content tools-->
+        
 
     </body>
 </html>
