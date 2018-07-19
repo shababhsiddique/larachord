@@ -1,7 +1,9 @@
-
 /* NicEdit - Micro Inline WYSIWYG
  * Copyright 2007-2008 Brian Kirchoff
+ *           2018 Shabab Haider Siddique
  *
+ * https://github.com/shababhsiddique/NicEdit
+ * 
  * NicEdit is distributed under the terms of the MIT license
  * For more information visit http://nicedit.com/
  * Do not remove this copyright message
@@ -1175,7 +1177,12 @@ var nicEditorPane = bkClass.extend({
         if (this.ne.nicPanel) {
             var panelElm = this.ne.nicPanel.elm;
             var panelPos = panelElm.pos();
-            var newLeft = panelPos[0] + parseInt(panelElm.getStyle('width'), 10) - (parseInt(this.pane.getStyle('width'), 10) + 8);
+            
+//            console.log(panelPos[0]);
+//            console.log(parseInt(panelElm.getStyle('width'), 10));
+//            console.log((parseInt(this.pane.getStyle('width'), 10) + 8));
+//            
+            var newLeft = '0px';//panelPos[0] + parseInt(panelElm.getStyle('width'), 10) - (parseInt(this.pane.getStyle('width'), 10) + 8);
             if (newLeft < this.pos[0]) {
                 this.contain.setStyle({
                     left: newLeft + 'px'

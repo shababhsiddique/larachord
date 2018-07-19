@@ -13,6 +13,7 @@ if ($id == NULL || $id == 0) {
     </div>
     <script type="text/javascript">
         if (!inIframe()) {
+            $("#nicpanelcss").remove();
             $('#myNicPanel').hide();
         }
     </script>
