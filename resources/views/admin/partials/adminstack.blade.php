@@ -8,7 +8,7 @@ if ($id == NULL || $id == 0) {
     
 } else {
     ?>
-    <link rel="stylesheet" href="{{asset('adminassets/nicedit/panel.css')}}"/>
+<link id="nicpanelcss" rel="stylesheet" href="{{asset('adminassets/nicedit/panel.css')}}"/>
     <script src="{{asset('adminassets/nicedit/nicEdit.js')}}"></script>
     <script type="text/javascript">
         //<![CDATA[
