@@ -75,8 +75,8 @@
             </a><!-- Video / See Documentation -->
             <div class="container" id="nic_block_1">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <hgroup class="title-group">
+                    <div class="col-xs-12" >
+                        <hgroup class="title-group"  data-editable data-name="main-content">
                             <h1 class="bigtitle">Better life with our app</h1>
                             <h4>No coding skills required</h4>
                         </hgroup>
