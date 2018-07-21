@@ -5,7 +5,7 @@
         <group>
             <file>file:/D:/xampp/htdocs/larachord/public/adminassets/nicedit/nicEdit.js</file>
             <file>file:/D:/xampp/htdocs/larachord/public/adminassets/nicedit/panel.css</file>
-            <file>file:/D:/xampp/htdocs/larachord/resources/views/admin/partials/adminbar.blade.php</file>
+            <file>file:/D:/xampp/htdocs/larachord/public/assets/js/main.js</file>
             <file>file:/D:/xampp/htdocs/larachord/resources/views/admin/partials/adminstack.blade.php</file>
             <file>file:/D:/xampp/htdocs/larachord/resources/views/site/master.blade.php</file>
         </group>

@@ -73,7 +73,7 @@
                opacity:1,
                quality: 'highres'}">
             </a><!-- Video / See Documentation -->
-            <div class="container" id="myInstance1">
+            <div class="container" id="nic_block_1">
                 <div class="row">
                     <div class="col-xs-12">
                         <hgroup class="title-group">
@@ -116,7 +116,7 @@
             <!-- Features -->
             <section class="section text-center">
                 <div class="container">
-                    <div class="row" >
+                    <div class="row" id="nic_block_2">
                         <div class="col-md-12" >
                             <hgroup class="title-group">
                                 <h3 class="section-title">Main Features</h3>
@@ -151,7 +151,7 @@
             <!-- Features -->
             <section class="section text-center">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="nic_block_3">
                         <div class="col-md-6 col-md-offset-3">
                             <h3 class="section-title" data-text="02">Awesome Title</h3>
                             <p>Compellingly enhance sustainable strategic theme areas via bricks-and-clicks e-business. Energistically brand enabled content through out-of-the-box initiatives. </p>
@@ -168,7 +168,7 @@
             <!-- Fun Facts / Counters -->
             <section class="section counters">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="">
                         <div class="col-sm-4 col-md-4">
                             <div class="numbers">
                                 <span class="number" data-from="0" data-to="987" data-speed="5000" data-refresh-interval="50"></span>
@@ -194,7 +194,7 @@
             <!-- Features / Left Image -->
             <section class="section features">
                 <div class="container">
-                    <div class="row flex flex-middle">
+                    <div class="row flex flex-middle" id="nic_block_5">
                         <div class="col-xs-12 col-md-6">
                             <figure class="figure">
                                 <img src="{{asset('assets/img/iphone6right.png')}}" alt="iphone" />
@@ -214,7 +214,7 @@
             <!-- Features / Right Image -->
             <section class="section features">
                 <div class="container">
-                    <div class="row flex flex-middle">
+                    <div class="row flex flex-middle" id="nic_block_6">
                         <div class="col-md-5 col-md-offset-1">
                             <div class="feature text-right">
                                 <h3 class="section-title">High performance</h3>
@@ -234,7 +234,7 @@
             <section class="section get-started">
                 <div class="container">
                     <div class="row">
-                        <article class="call-to flex flex-middle">
+                        <article class="call-to flex flex-middle" id="nic_block_7">
                             <div class="col-md-6 col-md-offset-2">
                                 <h3 class="title">Call To Action</h3>
                                 <p>Words that urge visitor of a sales promotion message to take an immediate action</p>
@@ -250,7 +250,7 @@
             <!-- Features / Mockup -->
             <section class="section text-center">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="nic_block_8">
                         <div class="col-md-12">
                             <hgroup class="title-group">
                                 <h3 class="section-title">More Benefits</h3>
