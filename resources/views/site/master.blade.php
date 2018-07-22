@@ -76,7 +76,7 @@
             <div class="container" id="nic_block_1">
                 <div class="row">
                     <div class="col-xs-12" >
-                        <hgroup class="title-group"  data-editable data-name="main-content">
+                        <hgroup class="title-group" data-editable data-name="title">
                             <h1 class="bigtitle">Better life with our app</h1>
                             <h4>No coding skills required</h4>
                         </hgroup>
@@ -118,27 +118,27 @@
                 <div class="container">
                     <div class="row" id="nic_block_2">
                         <div class="col-md-12" >
-                            <hgroup class="title-group">
+                            <hgroup class="title-group"  data-editable data-name="features">
                                 <h3 class="section-title">Main Features</h3>
                                 <h5 class="subtitle">Seamlessly reconceptualize fully tested outsourcing</h5>
                             </hgroup>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature">
+                            <div class="feature" data-editable data-name="clean">
                                 <i class="icon icon-code"></i>
                                 <h4 class="title">Clean code</h4>
                                 <p>Quickly transform ethical interfaces with bricks clicks paradigms. Negotiate multifunctional bandwidth for fully tested synergy..</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature">
+                            <div class="feature" data-editable data-name="powerful">
                                 <i class="icon icon-lab-flask"></i>
                                 <h4 class="title">Powerful tools</h4>
                                 <p>Quickly transform ethical interfaces with bricks clicks paradigms. Negotiate multifunctional bandwidth for fully tested synergy..</p>
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature">
+                            <div class="feature" data-editable data-name="nice">
                                 <i class="icon icon-tablet-mobile-combo"></i>
                                 <h4 class="title">Nice workspace</h4>
                                 <p>Quickly transform ethical interfaces with bricks clicks paradigms. Negotiate multifunctional bandwidth for fully tested synergy..</p>
@@ -152,7 +152,7 @@
             <section class="section text-center">
                 <div class="container">
                     <div class="row" id="nic_block_3">
-                        <div class="col-md-6 col-md-offset-3">
+                        <div class="col-md-6 col-md-offset-3" data-editable data-name="awesometitle">
                             <h3 class="section-title" data-text="02">Awesome Title</h3>
                             <p>Compellingly enhance sustainable strategic theme areas via bricks-and-clicks e-business. Energistically brand enabled content through out-of-the-box initiatives. </p>
                         </div>
