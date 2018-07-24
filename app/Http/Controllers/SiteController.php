@@ -21,7 +21,7 @@ class SiteController extends Controller
         $this->layout['adminbar'] = view('admin.partials.adminbar');
 
         //return view
-        return view('site.master', $this->layout);
+        return view('site.html.index', $this->layout);
     }
     
     
