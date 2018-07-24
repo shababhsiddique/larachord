@@ -50,26 +50,13 @@ window.addEventListener('load', function () {
         ;
 
 
-//        xhr = new XMLHttpRequest();
-//        xhr.addEventListener('readystatechange', onStateChange);
-//        xhr.open('POST', '/save-my-page');
-//        xhr.send(payload);
-        $.ajax({
-            url: saveUrl,
-            dataType: 'json',
-            type: 'post',
-            contentType: 'application/x-www-form-urlencoded',
-            data: {
-                'token': token,
-                'name':'ma ma',
-                'dp': 'dona'
-            },
-            success: function (data, textStatus, jQxhr) {
-                $('#response pre').html(data);
-            },
-            error: function (jqXhr, textStatus, errorThrown) {
-                console.log(errorThrown);
-            }
-        });
+        payload.append('token', token);
+
+        xhr = new XMLHttpRequest();
+        xhr.addEventListener('readystatechange', onStateChange);
+        xhr.open('POST', saveUrl);
+        xhr.send(payload);
+
+
     });
 });

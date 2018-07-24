@@ -114,9 +114,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12" >
-                        <hgroup class="title-group block1" data-editable data-name="block1">
-                            <h1 class="bigtitle">Better life with our app</h1>
-                            <h4>No coding skills required</h4>
+                        <hgroup class="title-group" data-editable>
+                            {!!App\Models\Block::findByIndex(0)->block_html!!}
                         </hgroup>
                         <div class="btn-duo" style="z-index: 2">
                             <button class="btn btn-info rounded" role="button">Download Now</button>
