@@ -51,6 +51,11 @@ class AdminLoginController extends Controller {
             Session::put('admin_name', $result->admin_name);
             Session::put('admin_privilage', $result->admin_privilage);
             Session::put('admin_id', $result->admin_id);
+            
+            $hash = base_convert(crc32( $result->admin_username . time() ), 10, 36); 
+            
+            Session::put('admin_accesstoken', $hash  .$result->admin_id);
+            
             //Message for Notification Builder
             Session::put('message', array(
                 'title' => "Welcome, $result->admin_name",

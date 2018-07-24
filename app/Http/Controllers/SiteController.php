@@ -18,7 +18,6 @@ class SiteController extends Controller
     {
           //Load Component
         $this->layout['adminstack'] = view('admin.partials.adminstack');
-        $this->layout['adminbar'] = view('admin.partials.adminbar');
 
         //return view
         return view('site.html.index', $this->layout);

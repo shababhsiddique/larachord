@@ -99,20 +99,17 @@
             </div><!-- /.container-fluid -->
         </nav>
 
+
+        <div style="position: fixed; top: 0; width: 100%; height: 100%; z-index: 0;">
+            <video id="videobgn" autoplay loop style="width:100%;">
+                <source src="{{asset('assets/yourmovie.mp4')}}" type="video/mp4">
+            </video>
+        </div>
+
+
         <!-- Header -->
         <header class="header hero flex flex-middle flex-center" role="banner">
-            <a id="bgndVideo" class="player"
-               data-property="{
-               videoURL:'http://www.youtube.com/watch?v=lMJXxhRFO1k',
-               containment:'.hero',
-               autoPlay:true,
-               mute:true,
-               startAt:0,
-               printUrl:false,
-               showControls:false,
-               opacity:1,
-               quality: 'highres'}">
-            </a><!-- Video / See Documentation -->
+
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12" >
@@ -120,7 +117,7 @@
                             <h1 class="bigtitle">Better life with our app</h1>
                             <h4>No coding skills required</h4>
                         </hgroup>
-                        <div class="btn-duo">
+                        <div class="btn-duo" style="z-index: 2">
                             <button class="btn btn-info rounded" role="button">Download Now</button>
                             <button class="btn btn-default rounded" role="button">Learn More</button>
                         </div>
