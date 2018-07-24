@@ -101,7 +101,8 @@
 
 
         <div style="position: fixed; top: 0; width: 100%; height: 100%; z-index: 0;">
-            <video id="videobgn" autoplay loop style="width:100%;">
+            <video id="videobgn" autoplay loop muted style="width:100%;">                
+                <source src="{{asset('assets/yourmovie.webm')}}" type="video/webm">
                 <source src="{{asset('assets/yourmovie.mp4')}}" type="video/mp4">
             </video>
         </div>
