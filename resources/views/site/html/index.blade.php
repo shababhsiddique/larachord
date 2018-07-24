@@ -155,30 +155,23 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12" >
-                            <hgroup class="title-group block2"  data-editable data-name="block2">
-                                <h3 class="section-title">Main Features</h3>
-                                <h5 class="subtitle">Seamlessly reconceptualize fully tested outsourcing</h5>
+                            <hgroup class="title-group block2"  data-editable>
+                                {!!App\Models\Block::findByIndex(1)->block_html!!}
                             </hgroup>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block3" data-editable data-name="block3">
-                                <i class="icon icon-code"></i>
-                                <h4 class="title">Clean code</h4>
-                                <p>Quickly transform ethical interfaces with bricks clicks paradigms. Negotiate multifunctional bandwidth for fully tested synergy..</p>
+                            <div class="feature block3" data-editable>
+                                {!!App\Models\Block::findByIndex(2)->block_html!!}
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block4" data-editable data-name="block4">
-                                <i class="icon icon-lab-flask"></i>
-                                <h4 class="title">Powerful tools</h4>
-                                <p>Quickly transform ethical interfaces with bricks clicks paradigms. Negotiate multifunctional bandwidth for fully tested synergy..</p>
+                            <div class="feature block4" data-editable>
+                                {!!App\Models\Block::findByIndex(3)->block_html!!}
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block5" data-editable data-name="block5">
-                                <i class="icon icon-tablet-mobile-combo"></i>
-                                <h4 class="title">Nice workspace</h4>
-                                <p>Quickly transform ethical interfaces with bricks clicks paradigms. Negotiate multifunctional bandwidth for fully tested synergy..</p>
+                            <div class="feature block5" data-editable>
+                                {!!App\Models\Block::findByIndex(4)->block_html!!}
                             </div>
                         </div>
                     </div>
@@ -189,9 +182,8 @@
             <section class="section text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3 block6" data-editable data-name="block6">
-                            <h3 class="section-title" data-text="02">Awesome Title</h3>
-                            <p>Compellingly enhance sustainable strategic theme areas via bricks-and-clicks e-business. Energistically brand enabled content through out-of-the-box initiatives. </p>
+                        <div class="col-md-6 col-md-offset-3 block6" data-editable>
+                            {!!App\Models\Block::findByIndex(5)->block_html!!}
                         </div>
                         <div class="col-xs-12">
                             <figure class="figure">
