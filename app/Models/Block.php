@@ -12,5 +12,18 @@ class Block extends Model {
     public static function findByIndex($blockIndex) {
         return self::where("block_index", $blockIndex)->first();
     }
+    
+    public static function findByName($blockName) {
+        $block =  self::where("block_name", $blockName)->first();
+        
+        if(!$block){
+            $block = new Block;
+            $block->block_name = $blockName;
+            $block->block_html = "test";
+            $block->save();
+            return $block;
+        }
+        return $block;
+    }
 
 }

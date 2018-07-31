@@ -114,8 +114,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12" >
-                        <hgroup class="title-group" data-editable>
-                            {!!App\Models\Block::findByIndex(0)->block_html!!}
+                        <hgroup class="title-group" data-editable data-name="block0">
+                            {!!App\Models\Block::findByName('block0')->block_html!!}
                         </hgroup>
                         <div class="btn-duo" style="z-index: 2">
                             <button class="btn btn-info rounded" role="button">Download Now</button>
@@ -155,23 +155,23 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12" >
-                            <hgroup class="title-group block2"  data-editable>
-                                {!!App\Models\Block::findByIndex(1)->block_html!!}
+                            <hgroup class="title-group block2"  data-editable data-name="block1">
+                                {!!App\Models\Block::findByName('block1')->block_html!!}
                             </hgroup>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block3" data-editable>
-                                {!!App\Models\Block::findByIndex(2)->block_html!!}
+                            <div class="feature block3" data-editable data-name="block2">
+                                {!!App\Models\Block::findByName('block2')->block_html!!}
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block4" data-editable>
-                                {!!App\Models\Block::findByIndex(3)->block_html!!}
+                            <div class="feature block4" data-editable data-name="block3">
+                                {!!App\Models\Block::findByName('block3')->block_html!!}
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block5" data-editable>
-                                {!!App\Models\Block::findByIndex(4)->block_html!!}
+                            <div class="feature block5" data-editable data-name="block4">
+                                {!!App\Models\Block::findByName('block4')->block_html!!}
                             </div>
                         </div>
                     </div>
@@ -182,8 +182,8 @@
             <section class="section text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3 block6" data-editable>
-                            {!!App\Models\Block::findByIndex(5)->block_html!!}
+                        <div class="col-md-6 col-md-offset-3 block6" data-editable data-name="block5">
+                            {!!App\Models\Block::findByName('block5')->block_html!!}
                         </div>
                         <div class="col-xs-12">
                             <figure class="figure">
@@ -223,7 +223,7 @@
             <!-- Features / Left Image -->
             <section class="section features">
                 <div class="container">
-                    <div class="row flex flex-middle" id="nic_block_5">
+                    <div class="row flex flex-middle">
                         <div class="col-xs-12 col-md-6">
                             <figure class="figure">
                                 <img src="{{asset('assets/img/iphone6right.png')}}" alt="iphone" />
@@ -243,7 +243,7 @@
             <!-- Features / Right Image -->
             <section class="section features">
                 <div class="container">
-                    <div class="row flex flex-middle" id="nic_block_6">
+                    <div class="row flex flex-middle">
                         <div class="col-md-5 col-md-offset-1">
                             <div class="feature text-right">
                                 <h3 class="section-title">High performance</h3>
