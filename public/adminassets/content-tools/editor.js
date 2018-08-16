@@ -8,7 +8,8 @@ window.addEventListener('load', function () {
 
     editor = ContentTools.EditorApp.get();
 
-    editor.init('*[data-editable]', 'main-content');
+//    editor.init('*[data-editable]', 'main-content');
+    editor.init('*[data-editable]', 'data-name');
 
 
 
@@ -27,10 +28,15 @@ window.addEventListener('load', function () {
 
         // Collect the contents of each region into a FormData instance
         payload = new FormData();
+        
         for (name in regions) {
+            
             if (regions.hasOwnProperty(name)) {
                 payload.append(name, regions[name]);
             }
+//            if (regions.hasOwnProperty(name)) {
+//                payload.append(name, regions[name]);
+//            }
         }
 
         // Send the update content to the server to be saved

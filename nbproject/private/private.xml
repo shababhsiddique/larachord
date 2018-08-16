@@ -1,18 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/xampp/htdocs/larachord/app/Http/Controllers/AdminApiController.php</file>
-            <file>file:/D:/xampp/htdocs/larachord/resources/views/site/html/index.blade.php</file>
-            <file>file:/D:/xampp/htdocs/larachord/public/adminassets/content-tools/editor.js</file>
-            <file>file:/D:/xampp/htdocs/larachord/database/migrations/2018_07_15_120857_create_admins_table.php</file>
-            <file>file:/D:/xampp/htdocs/larachord/database/seeds/DatabaseSeeder.php</file>
-            <file>file:/D:/xampp/htdocs/larachord/database/migrations/2018_07_24_141820_create_blocks_table.php</file>
-            <file>file:/D:/xampp/htdocs/larachord/app/Http/Controllers/AdminController.php</file>
-            <file>file:/D:/xampp/htdocs/larachord/database/seeds/blocks.sql</file>
-            <file>file:/D:/xampp/htdocs/larachord/resources/views/admin/partials/adminstack.blade.php</file>
-            <file>file:/D:/xampp/htdocs/larachord/app/Models/Block.php</file>
-        </group>
-    </open-files>
 </project-private>

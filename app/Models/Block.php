@@ -19,7 +19,7 @@ class Block extends Model {
         if(!$block){
             $block = new Block;
             $block->block_name = $blockName;
-            $block->block_html = "test";
+            $block->block_html = "no text added";
             $block->save();
             return $block;
         }

@@ -14,9 +14,9 @@ class AdminApiController extends Controller {
         //unset token
         unset($formArray['token']);
 
-        foreach ($formArray as $blockIndex => $blockUpdate) {
+        foreach ($formArray as $blockName => $blockUpdate) {
             
-            $block = Block::findByIndex($blockIndex);
+            $block = Block::findByName($blockName);
             $block->block_html = $blockUpdate;
             $block->save();
         }

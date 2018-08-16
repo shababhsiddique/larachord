@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Hansen</title>
+        <title>Deraj Inventory</title>
         <meta name="description" content="HTML5 Landing Page Template">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Filip Greksa">
@@ -61,7 +61,7 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed icon icon-menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     </button>
-                    <a class="navbar-brand" href="#">Larachord</a>
+                    <a class="navbar-brand" href="#">DerajInventory</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,7 +101,7 @@
 
 
         <div style="position: fixed; top: 0; width: 100%; height: 100%; z-index: 0;">
-            <video id="videobgn" autoplay loop muted style="width:100%;">                
+            <video id="videobgn" autoplay loop muted>                
                 <source src="{{asset('assets/yourmovie.webm')}}" type="video/webm">
                 <source src="{{asset('assets/yourmovie.mp4')}}" type="video/mp4">
             </video>
@@ -114,13 +114,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12" >
-                        <hgroup class="title-group" data-editable data-name="block0">
-                            {!!App\Models\Block::findByName('block0')->block_html!!}
+                        <hgroup class="title-group" data-editable data-name="jumbotron">
+                            {!!App\Models\Block::findByName('jumbotron')->block_html!!}
                         </hgroup>
-                        <div class="btn-duo" style="z-index: 2">
-                            <button class="btn btn-info rounded" role="button">Download Now</button>
-                            <button class="btn btn-default rounded" role="button">Learn More</button>
-                        </div>
+                        <div class="btn-duo" style="z-index: 2" data-editable data-name="jumbotron-buttons">
+                            {!!App\Models\Block::findByName('jumbotron-buttons')->block_html!!}
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -155,23 +154,23 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12" >
-                            <hgroup class="title-group block2"  data-editable data-name="block1">
-                                {!!App\Models\Block::findByName('block1')->block_html!!}
+                            <hgroup class="title-group block2"  data-editable data-name="mainfeatures">
+                                {!!App\Models\Block::findByName('mainfeatures')->block_html!!}
                             </hgroup>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block3" data-editable data-name="block2">
-                                {!!App\Models\Block::findByName('block2')->block_html!!}
+                            <div class="feature block3" data-editable data-name="feature1">
+                                {!!App\Models\Block::findByName('feature1')->block_html!!}
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block4" data-editable data-name="block3">
-                                {!!App\Models\Block::findByName('block3')->block_html!!}
+                            <div class="feature block4" data-editable data-name="feature3">
+                                {!!App\Models\Block::findByName('feature3')->block_html!!}
                             </div>
                         </div>
                         <div class="col-sm-4">
-                            <div class="feature block5" data-editable data-name="block4">
-                                {!!App\Models\Block::findByName('block4')->block_html!!}
+                            <div class="feature block5" data-editable data-name="feature2">
+                                {!!App\Models\Block::findByName('feature2')->block_html!!}
                             </div>
                         </div>
                     </div>
@@ -182,13 +181,13 @@
             <section class="section text-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3 block6" data-editable data-name="block5">
-                            {!!App\Models\Block::findByName('block5')->block_html!!}
+                        <div class="col-md-6 col-md-offset-3 block6" data-editable data-name="subfeature">
+                            {!!App\Models\Block::findByName('subfeature')->block_html!!}
                         </div>
                         <div class="col-xs-12">
-                            <figure class="figure">
-                                <img src="{{asset('assets/img/landscpiphone.png')}}" alt="iphone" />
-                            </figure>
+                            <div  class="figure">
+                                <img src="{{asset('assets/img/landscpiphone.png')}}" alt="iphone" />                                
+                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -230,10 +229,8 @@
                             </figure>
                         </div>
                         <div class="col-md-5">
-                            <div class="feature">
-                                <h3 class="section-title">Innovative Ideas</h3>
-                                <p>Seamlessly administrate ethical infrastructures without resource-leveling intellectual capital. Competently repurpose team driven results without granular metrics.</p>
-                                <p>Proactively <mark>redefine</mark> scalable services through compelling platforms.</p>
+                            <div class="feature"  data-editable data-name="focus1">
+                                {!!App\Models\Block::findByName('focus1')->block_html!!}                                
                             </div>
                         </div>
                     </div>
@@ -245,9 +242,8 @@
                 <div class="container">
                     <div class="row flex flex-middle">
                         <div class="col-md-5 col-md-offset-1">
-                            <div class="feature text-right">
-                                <h3 class="section-title">High performance</h3>
-                                <p>Interactively visualize business alignments vis-a-vis progressive experiences. Globally predominate virtual leadership skills before web-enabled resources. <strong>Professionally</strong> expedite highly efficient networks without exceptional strategic theme areas. </p>
+                            <div class="feature text-right" data-editable data-name="focus2">
+                                {!!App\Models\Block::findByName('focus2')->block_html!!}                                
                             </div>
                         </div>
                         <div class="col-xs-12 col-md-6">
@@ -264,12 +260,11 @@
                 <div class="container">
                     <div class="row">
                         <article class="call-to flex flex-middle" id="nic_block_7">
-                            <div class="col-md-6 col-md-offset-2">
-                                <h3 class="title">Call To Action</h3>
-                                <p>Words that urge visitor of a sales promotion message to take an immediate action</p>
+                            <div class="col-md-6 col-md-offset-2"  data-editable data-name="calltoaction">
+                                {!!App\Models\Block::findByName('calltoaction')->block_html!!}          
                             </div>
-                            <div class="col-md-4">
-                                <a href="#" class="btn btn-danger rounded">Get Started</a>
+                            <div class="col-md-4"  data-editable data-name="calltoaction-buttons">
+                                {!!App\Models\Block::findByName('calltoaction-buttons')->block_html!!}                                         
                             </div>
                         </article>
                     </div>
@@ -280,11 +275,8 @@
             <section class="section text-center">
                 <div class="container">
                     <div class="row" id="nic_block_8">
-                        <div class="col-md-12">
-                            <hgroup class="title-group">
-                                <h3 class="section-title">More Benefits</h3>
-                                <h5 class="subtitle">Other features that characterize our awesome product</h5>
-                            </hgroup>
+                        <div class="col-md-12" data-editable data-name="morefeatures">
+                            {!!App\Models\Block::findByName('morefeatures')->block_html!!}                                         
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <!-- Left Box -->
@@ -292,27 +284,25 @@
                                 <li>
                                     <div class="iconbox">
                                         <i class="icon icon-fingerprint"></i>
-                                        <div class="box">
-                                            <h4 class="title">Touch enabled</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam eros auctor neque volutpat pharetra placerat nisi</p>
+                                        <div class="box" data-editable data-name="morefeature1">
+                                            {!!App\Models\Block::findByName('morefeature1')->block_html!!}  
+
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="iconbox">
                                         <i class="icon icon-shield"></i>
-                                        <div class="box">
-                                            <h4 class="title">Infinite Power</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam eros auctor neque volutpat pharetra placerat nisi</p>
+                                        <div class="box" data-editable data-name="morefeature2">
+                                            {!!App\Models\Block::findByName('morefeature2')->block_html!!}  
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="iconbox">
                                         <i class="icon icon-network"></i>
-                                        <div class="box">
-                                            <h4 class="title">Networks friendly</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam eros auctor neque volutpat pharetra</p>
+                                        <div class="box" data-editable data-name="morefeature3">
+                                            {!!App\Models\Block::findByName('morefeature3')->block_html!!}  
                                         </div>
                                     </div>
                                 </li>
@@ -329,27 +319,24 @@
                                 <li>
                                     <div class="iconbox">
                                         <i class="icon icon-layers"></i>
-                                        <div class="box">
-                                            <h4 class="title">Precise work</h4>
-                                            <p>Pellentesque non lorem volutpat lorem vehicula mollis eget vel justo. Proin vel lorem sed tortor consequat varius</p>
+                                        <div class="box" data-editable data-name="morefeature4">
+                                            {!!App\Models\Block::findByName('morefeature4')->block_html!!}  
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="iconbox">
                                         <i class="icon icon-sound-mix"></i>
-                                        <div class="box">
-                                            <h4 class="title">Aliens tested</h4>
-                                            <p> Phasellus posuere ex eu lectus efficitur, ornare porttitor massa aliquet. In et lectus quis eros pharetra blandit in sit amet metus</p>
+                                        <div class="box" data-editable data-name="morefeature5">
+                                            {!!App\Models\Block::findByName('morefeature5')->block_html!!}  
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="iconbox">
                                         <i class="icon icon-colours"></i>
-                                        <div class="box">
-                                            <h4 class="title">Satellite support</h4>
-                                            <p>Pellentesque non lorem volutpat lorem vehicula mollis eget vel justo. Proin vel lorem sed tortor consequat varius</p>
+                                        <div class="box" data-editable data-name="morefeature6">
+                                            {!!App\Models\Block::findByName('morefeature6')->block_html!!}  
                                         </div>
                                     </div>
                                 </li>
@@ -380,10 +367,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <hgroup class="title-group">
-                                <h3 class="section-title">Awesome Screens</h3>
-                                <h5 class="subtitle">It is not just a simple app is a masterpiece</h5>
-                            </hgroup>
+                            <div class="title-group" data-editable data-name="preview">
+                                {!!App\Models\Block::findByName('preview')->block_html!!}  
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -424,9 +410,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <article class="call-to text-center">
-                                <h3 class="title">User Interface</h3>
-                                <p>Seamlessly reconceptualize fully tested outsourcing after go forward sources</p>
+                            <article class="call-to text-center" >
+                                <div data-editable data-name="preview-end">
+                                    {!!App\Models\Block::findByName('preview-end')->block_html!!}  
+                                </div>
                                 <button id="gallery" class="btn btn-danger rounded">Open Gallery</button>
                                 <!-- Gallery / hidden in DOM / open with Button #gallery-->
                                 <ul id="gallery" class="gallery mfp-hide">
